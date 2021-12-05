@@ -1,0 +1,158 @@
+ul {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    background-color: black;
+    margin: 0;
+    top: 0;
+    position: sticky;
+}
+.icon {
+    float: left;
+}
+.icon > h2 {
+    margin: 0;
+}
+li {
+    font-size: 1.1em;
+    display: inline-block;
+}
+.mobile {
+    display: none;
+}
+.icon.mobile {
+    background-color: black;
+    color: white;
+}
+.tengah {
+    text-align: center;
+}
+.tombol {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 0;
+    color: white;
+    background-color: black;
+}
+
+.tulisan:hover {
+    box-shadow: 0px 10px 5px black;
+    transition-duration: 0.5s;
+    transform: translateY(-10px);
+}
+.tulisan:active {
+    box-shadow: 0px 5px 5px black;
+    transform: translateY(-5px);
+}
+.tombol:focus {
+    outline: none;
+    background-color: grey;
+}
+.content-perkenalan {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 24em;
+    margin: 1em auto;
+    text-align: justify;
+}
+.form-contact-us, .contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.inputan {
+    width: 85%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+
+.inputan > label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.inputan > input, .inputan > textarea {
+    width: 100%;
+    margin: .5em 0;
+    font-size: 1em;
+}
+
+.btn-kirim {
+    width: 85%;
+    margin: 1em 0;
+    border: none;
+    background-color: grey;
+    color: white;
+    font-size: 1em;
+    padding: .5em 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1.5em 0;
+    color: white;
+    background-color: black;
+}
+
+.contact-icon {
+    width: 50px;
+    margin: 2em;
+}
+
+.contact-desktop {
+    display: none;
+}
+
+.contact-icon-bundler {
+    display: block;
+}
+
+.contact-info > div {
+    display: inline-block;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .non-desktop {
+        display: none;
+    }
+    .section-education {
+        width: 49.5%;
+        vertical-align: top;
+    }
+
+    hr {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .form-contact-us, .contact-info {
+        width: 49.5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #contact-us {
+        vertical-align: top;
+    }
+
+    .contact-desktop {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .contact-icon-bundler {
+        display: inline-block;
+        min-width: 300px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contact-info > div {
+        display: block;
+    }
+}
